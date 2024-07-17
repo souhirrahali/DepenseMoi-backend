@@ -28,6 +28,7 @@ public interface DepenseRepository extends JpaRepository<Depense, Long> {
     Optional<Depense> findByIdAndUser(Long id, User user);
 
     List<Depense> findByUserAndDateBetween(User user, LocalDate debut, LocalDate fin);
+    
 
 
 }

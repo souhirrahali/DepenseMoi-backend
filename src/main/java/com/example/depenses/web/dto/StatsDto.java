@@ -1,9 +1,6 @@
 
 package com.example.depenses.web.dto;
 
-import com.example.depenses.dao.entities.Depense;
-import com.example.depenses.dao.entities.Revenu;
-
 import lombok.Data;
 
 

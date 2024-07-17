@@ -42,6 +42,8 @@ private boolean isTokenExpired(String token) {
     
 public String generatToken(User  user){
         String token =Jwts.builder().subject(user.getEmail())
+
+        
                             .issuedAt(new Date(System.currentTimeMillis()))
                             .expiration(new Date(System.currentTimeMillis() +24*60*60*1000))
                             .signWith(getSigninKey())

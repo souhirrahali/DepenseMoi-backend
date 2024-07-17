@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class RevenuResponseDto {
-     private Long id;
+    private Long id;
     private String titre;
     private String description;
     private String categorie;
