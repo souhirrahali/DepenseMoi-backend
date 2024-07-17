@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.example.depenses.dao.entities.User;
 import com.example.depenses.dao.repositories.UserRepository;
+import com.example.depenses.web.dto.UserDto;
+
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class UserService {
@@ -35,6 +38,20 @@ public class UserService {
         } catch (Exception e) {
             throw new Exception("user not found");
         }
+    }
+
+     public UserDto convertToUserDto(User user) {
+        UserDto  dto = new UserDto ();
+        
+        dto.setFirstname(user.getFirstname());
+        dto.setLastname(user.getLastname());
+       
+        return dto;
+    }
+       public void deleteUser( String email) {
+        User user= userRepo.findByEmail(email)
+            .orElseThrow(() -> new EntityNotFoundException("User avec l'email" +email + " n'existe pas"));
+        userRepo.delete(user);
     }
 
 }
