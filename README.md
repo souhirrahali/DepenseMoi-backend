@@ -17,7 +17,7 @@ MySQL Database<br/>
 Maven<br/>
 JWT Authentication
 
-#Security
+# Security
 JWT-based authentication<br/>
 Password encryption<br/>
 Role-based access control
