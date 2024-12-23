@@ -10,14 +10,14 @@ Statistical analysis and reporting
 Secure API endpoints
 
 # Tech Stack
-Spring Boot
-Spring Security
-Spring Data JPA
-MySQL Database
-Maven
+Spring Boot<br/>
+Spring Security<br/>
+Spring Data JPA<br/>
+MySQL Database<br/>
+Maven<br/>
 JWT Authentication
 
 #Security
-JWT-based authentication
-Password encryption
+JWT-based authentication<br/>
+Password encryption<br/>
 Role-based access control
